@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Live IPL Stream - ANKMODS</title>
+  <title>Live IPL Stream</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" defer></script>
@@ -151,7 +151,7 @@
   <div class="action-bar">
     <div class="action-bar-content">
       <div class="action-bar-title">
-        <h1 class="text-2xl font-bold">IPL LIVE STREAM</h1>
+        <h1 class="text-2xl font-bold">ANKMODS IPL LIVE STREAM</h1>
         <p class="mt-1 text-blue-100 text-sm">Watch Live Cricket Matches in HD</p>
       </div>
       <div class="flex items-center gap-4">
@@ -253,7 +253,7 @@
       const db = firebase.firestore();
 
       const config = {
-        streamUrl: 'https://cdn1.bmstudiopk.com:1935/totalsports/live/chunklist_w987479680.m3u8',
+        streamUrl: 'http://cdn1.bmstudiopk.com:1935/totalsports/live/chunklist_w987479680.m3u8',
         autoPlay: true,
         maxRetries: 3,
         retryDelay: 3000
@@ -266,7 +266,7 @@
       let retryCount = 0;
       let isPlaying = false;
       let isMuted = false;
-      const badWords = ['badword1', 'badword2']; // Customize this list
+      const badWords = ['chutiya', 'madarchod']; // Customize this list
 
       function initPlayer() {
         globalLoading.style.display = 'flex';
